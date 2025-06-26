@@ -1,65 +1,66 @@
-# Qwik City App ⚡️
+# 🎬 Qwik Movies Library - CRUD App
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+A fast, modern CRUD (Create, Read, Update, Delete) application built using **Qwik + Qwik City**. Manage your own movie library with clean UI and interactive components.
+
+This app allows you to:
+
+- Add new movies using a modal form.
+- Edit existing movies inline.
+- Delete movies dynamically.
+- View a table of all movie records.
 
 ---
 
-## Project Structure
+## 🛠 Features
 
-This project is using Qwik with [QwikCity](https://qwik.dev/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+- Create new movie entries.
+- Edit movie data with instant update to table.
+- Delete a movie row interactively.
+- Shared state managed using `useStore` + `useContext`.
+- Ultra-fast Qwik architecture with SSR.
+- Styled with Tailwind CSS.
 
-Inside your project, you'll see the following directory structure:
+---
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
+## 🧰 Built With
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/qwikcity/routing/overview/) for more info.
+- [Qwik](https://qwik.dev/)
+- [Qwik City](https://qwik.dev/qwikcity/overview/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Modular Forms](https://modular-forms.dev/)
+- [Valibot](https://valibot.dev/)
 
-- `src/components`: Recommended directory for components.
+---
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+## 🚀 Getting Started
 
-## Add Integrations and deployment
+### 1. Clone & Install
 
-Use the `npm run qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
-
-```shell
-npm run qwik add # or `yarn qwik add`
-```
-
-## Development
-
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
-
-```shell
-npm start # or `yarn start`
+```bash
+git clone git@github.com:Abinaya141/movie-library.git
+cd qwik-movie-library
+pnpm install
 ```
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
+### 2. Start the Dev Server
 
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
-
-```shell
-npm run preview # or `yarn preview`
+```bash
+pnpm Dev
 ```
 
-## Production
+Runs in development mode with SSR.
 
-The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
+---
 
-```shell
-npm run build # or `yarn build`
-```
+## 🔗 Helpful Links
+
+- [Qwik Docs](https://qwik.dev/)
+- [Qwik Discord](https://qwik.dev/chat)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+
+---
+
+## 🪪 License
+
+MIT © 2025 Abinaya
