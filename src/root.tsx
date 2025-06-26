@@ -4,6 +4,9 @@ import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
 
+// store
+import { useInitMovieStore } from "./store";
+
 export default component$(() => {
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,
@@ -11,6 +14,9 @@ export default component$(() => {
    *
    * Don't remove the `<head>` and `<body>` elements.
    */
+
+    // init store
+  useInitMovieStore();
 
   return (
     <QwikCityProvider>
