@@ -75,17 +75,22 @@ export const useMovieStoreActions = {
     add(store: StoreType, Movie: MovieType) {
         store.movies.push(Movie);
     },
-    // remove(store: StoreType, id: string) {
-    //     console.log("id - ",id)
-    //     store.movies = store.movies.filter((row) => row.id !== id);
+    
+    // remove(store: StoreType, id: number) {
+    //     console.log("id - ", id)
+    //     const row = id
+    //     if (row !== -1) {
+    //         store.movies.splice(row, 1)
+    //     }
     // },
-    remove(store: StoreType, id: number) {
-        console.log("id - ", id)
-        const row = id
-        if (row !== -1) {
-            store.movies.splice(row, 1)
+
+    remove(store: StoreType, id: string) {
+        const index = store.movies.findIndex((movie) => movie.id === id);
+        if (index !== -1) {
+            store.movies.splice(index, 1);
         }
     },
+
 
     update(store: StoreType, id: string, record: MovieType) {
         const index = store.movies.findIndex((row) => row.id == id);

@@ -36,7 +36,7 @@ export const CreateMovieButton = component$(() => {
     return (
         <>
             <button
-                class="bg-green-700 hover:bg-green-800 text-white font-medium px-5 py-2.5 rounded-md shadow-all"
+                class="bg-green-800 hover:bg-green-700 text-white font-medium px-5 py-2.5 rounded-md shadow-all"
                 onClick$={() => (isModalVisible.value = true)}
             >
                 Add Movie +
