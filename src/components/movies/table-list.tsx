@@ -1,4 +1,3 @@
-// MovieList.tsx
 import { component$ } from '@builder.io/qwik';
 
 // components
@@ -31,8 +30,8 @@ export const MovieList = component$((props: Props) => {
                     </thead>
 
                     <tbody class="text-gray-700 divide-y divide-gray-200">
-                        {data.map((row, index) => (
-                            <tr key={index} class="hover:bg-gray-50">
+                        {data.map((row) => (
+                            <tr key={row.id} class="hover:bg-gray-50">
                                 <td class="px-5 py-3 font-semibold text-center">{row.id}</td>
                                 <td class="px-5 py-3 font-semibold text-center">{row.title}</td>
                                 <td class="px-5 py-3 font-semibold text-center">{row.year}</td>
@@ -41,7 +40,7 @@ export const MovieList = component$((props: Props) => {
                                 <td class="px-5 py-3 text-center">
                                     <div class="flex justify-center gap-4">
                                         <EditMovieButton id={row.id} Movie={row} />
-                                        <DeleteMovieButton id={index} />
+                                        <DeleteMovieButton id={row.id} />
                                     </div>
                                 </td>
                             </tr>
