@@ -28,7 +28,5 @@ export const MovieFormSchema = v.object({
     rating: v.pipe(
         v.string(),
         v.nonEmpty('* Please enter a rating (e.g. PG, PG-13, R, 5 stars)'),
-        v.minLength(1, '* Rating must be at least 1 character'),
-        v.maxLength(10, '* Rating should not exceed 10 characters'),
     ),
 });

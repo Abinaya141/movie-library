@@ -51,3 +51,4 @@ export const MovieList = component$((props: Props) => {
         </div>
     );
 });
+
